@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get build artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifacts@v3
         with: 
           name: dist-files # This name will be fetched from the name we assigned in upload artifacts step of build job.
       - name: Output contents
